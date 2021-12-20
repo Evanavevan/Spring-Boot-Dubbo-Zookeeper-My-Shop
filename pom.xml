@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.evan</groupId>
+    <artifactId>spring-boot-dubbo-zookeeper-my-shop</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>myshop-dependencies</module>
+        <module>myshop-commons</module>
+        <module>myshop-commons-domain</module>
+        <module>myshop-commons-mapper</module>
+        <module>myshop-databases</module>
+        <module>myshop-static-backend</module>
+        <module>myshop-commons-dubbo</module>
+        <module>myshop-service-user-api</module>
+        <module>myshop-service-user-provider</module>
+        <module>myshop-service-user-consumer</module>
+        <module>myshop-service-upload</module>
+        <module>myshop-service-redis-api</module>
+        <module>myshop-service-redis-provider</module>
+        <module>myshop-service-search-api</module>
+        <module>myshop-service-search-provider</module>
+        <module>myshop-service-search-cosumer</module>
+    </modules>
+    <packaging>pom</packaging>
+
+    <name>spring-boot-dubbo-zookeeper-my-shop</name>
+</project>

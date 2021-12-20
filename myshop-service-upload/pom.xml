@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>myshop-dependencies</artifactId>
+        <groupId>com.evan</groupId>
+        <version>1.0.0-RELEASE</version>
+        <relativePath>../myshop-dependencies/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>myshop-service-upload</artifactId>
+    <packaging>jar</packaging>
+
+    <name>myshop-service-upload</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>net.oschina.zcx7878</groupId>
+            <artifactId>fastdfs-client-java</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.evan</groupId>
+            <artifactId>myshop-commons-dubbo</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
