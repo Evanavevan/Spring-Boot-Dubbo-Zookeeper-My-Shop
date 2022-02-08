@@ -1,0 +1,15 @@
+version: '3.1'
+services:
+  myshop-service-upload:
+    restart: always
+    container_name: myshop-service-upload
+    image: 127.0.0.1:5000/myshop-service-upload
+    ports:
+      - 8602:8602
+      - 8702:8702
+      - 30882:30882
+    networks:
+    - service-upload-network
+
+networks:
+  service-upload-network:

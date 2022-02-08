@@ -26,6 +26,27 @@
             <artifactId>myshop-commons-dubbo</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.evan</groupId>
+            <artifactId>myshop-static-backend</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.evan</groupId>
+            <artifactId>myshop-service-user-api</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.evan.myshop.service.upload.MyShopServiceUploadApplication</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

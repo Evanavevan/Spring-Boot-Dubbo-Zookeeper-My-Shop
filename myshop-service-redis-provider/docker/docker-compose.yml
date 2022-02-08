@@ -1,0 +1,15 @@
+version: '3.1'
+services:
+  myshop-service-redis-provider:
+    restart: always
+    container_name: myshop-service-redis-provider
+    image: 127.0.0.1:5000/myshop-service-redis-provider
+    ports:
+      - 8503:8503
+      - 22222:22222
+      - 20881:20881
+    networks:
+    - service-redis-network
+
+networks:
+  service-redis-network:

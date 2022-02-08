@@ -6,7 +6,7 @@ spring:
     druid:
       url: jdbc:mysql://120.24.200.204:3306/myshop?useUnicode=true&characterEncoding=utf-8&useSSL=false
       username: root
-      password: 123456
+      password: xxxxx
       initial-size: 1
       min-idle: 1
       max-active: 20
@@ -33,7 +33,7 @@ services:
 dubbo:
   ## Base packages to scan Dubbo Component：@com.alibaba.dubbo.config.annotation.Service
   scan:
-    basePackages: com.evam.myshop.service.search.provider.api.impl
+    basePackages: com.evam.myshop.service.search.provider.impl
   ## ApplicationConfig Bean
   application:
     id: myshop-service-search-provider

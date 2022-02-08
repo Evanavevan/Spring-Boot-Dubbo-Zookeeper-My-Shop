@@ -6,6 +6,8 @@ import javax.persistence.*;
 
 @Table(name = "tb_content")
 public class TbContent implements Serializable {
+    // 二级缓存需要用到的序列号
+    private static final long serialVersionUID = 3604456379418275178L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

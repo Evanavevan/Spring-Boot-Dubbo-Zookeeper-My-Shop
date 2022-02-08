@@ -21,9 +21,11 @@
         <module>myshop-service-upload</module>
         <module>myshop-service-redis-api</module>
         <module>myshop-service-redis-provider</module>
+        <module>myshop-service-redis-consumer</module>
         <module>myshop-service-search-api</module>
         <module>myshop-service-search-provider</module>
-        <module>myshop-service-search-cosumer</module>
+        <module>myshop-service-search-consumer</module>
+        <module>myshop-api-gateway</module>
     </modules>
     <packaging>pom</packaging>
 

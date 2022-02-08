@@ -1,6 +1,5 @@
 # `My Shop With Spring Boot, Dubbo, Zookeeper`
 
 ## `TODO`
-- `API Gateway`
-- `MyBatis Redis` 二级缓存
-- `nginx` 跨域
+- 代码检查，防止有问题
+- 完善用户列表页面展示

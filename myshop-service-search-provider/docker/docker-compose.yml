@@ -1,0 +1,15 @@
+version: '3.1'
+services:
+  myshop-service-search-provider:
+    restart: always
+    container_name: myshop-service-search-provider
+    image: 127.0.0.1:5000/myshop-service-search-provider
+    ports:
+      - 8504:8504
+      - 22222:22222
+      - 20881:20881
+    networks:
+    - service-search-network
+
+networks:
+  service-search-network:

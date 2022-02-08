@@ -6,6 +6,8 @@ import javax.persistence.*;
 
 @Table(name = "tb_item_desc")
 public class TbItemDesc implements Serializable {
+    // 二级缓存需要用到的序列号
+    private static final long serialVersionUID = 6552871181094854497L;
     /**
      * 商品ID
      */

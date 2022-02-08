@@ -11,7 +11,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 @SpringBootApplication(scanBasePackages = "com.evan.myshop")
 @EnableHystrix
 @EnableHystrixDashboard
-@MapperScan(basePackages = "mapper")
+@MapperScan(basePackages = "com.evan.myshop.commons.mapper")
 @EnableTransactionManagement
 public class MyShopServiceUserProviderApplication {
     public static void main(String[] args) {

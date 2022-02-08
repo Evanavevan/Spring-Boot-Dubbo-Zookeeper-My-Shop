@@ -22,3 +22,56 @@ storage:
   type: fastdfs
   fastdfs:
     tracker_server: 120.24.200.204:22122
+
+# Dubbo Config properties
+dubbo:
+  scan:
+    basePackages: com.evan.myshop.service.upload
+  ## ApplicationConfig Bean
+  application:
+    id: myshop-service-upload
+    name: myshop-service-upload
+  ## ProtocolConfig Bean
+  protocol:
+    id: dubbo
+    name: dubbo
+    serialization: kryo
+    port: 30882
+    status: server
+  ## RegistryConfig Bean
+  registry:
+    id: zookeeper
+    address: zookeeper://120.24.200.204:2181
+
+# Dubbo Endpoint (default status is disable)
+endpoints:
+  dubbo:
+    enabled: true
+
+management:
+  server:
+    port: 8702
+  # Dubbo Health
+  health:
+    dubbo:
+      status:
+        ## StatusChecker Name defaults (default : "memory", "load" )
+        defaults: memory
+  # Enables Dubbo All Endpoints
+  endpoint:
+    dubbo:
+      enabled: true
+    dubbo-shutdown:
+      enabled: true
+    dubbo-configs:
+      enabled: true
+    dubbo-services:
+      enabled: true
+    dubbo-references:
+      enabled: true
+    dubbo-properties:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"

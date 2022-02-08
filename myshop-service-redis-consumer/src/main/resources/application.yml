@@ -20,7 +20,7 @@ services:
 # Dubbo Config properties
 dubbo:
   scan:
-    basePackages: com.evan.myshop.service.redis.consumer.controller
+    basePackages: com.evan.myshop.service.redis.consumer
   ## ApplicationConfig Bean
   application:
     id: myshop-service-redis-consumer
@@ -30,6 +30,8 @@ dubbo:
     id: dubbo
     name: dubbo
     serialization: kryo
+    port: 30883
+    status: server
   ## RegistryConfig Bean
   registry:
     id: zookeeper
@@ -42,7 +44,7 @@ endpoints:
 
 management:
   server:
-    port: 8701
+    port: 8703
   # Dubbo Health
   health:
     dubbo:

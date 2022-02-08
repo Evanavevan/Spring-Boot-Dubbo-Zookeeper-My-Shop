@@ -6,6 +6,8 @@ import javax.persistence.*;
 
 @Table(name = "tb_order_shipping")
 public class TbOrderShipping implements Serializable {
+    // 二级缓存需要用到的序列号
+    private static final long serialVersionUID = 117057932680871783L;
     /**
      * 订单ID
      */

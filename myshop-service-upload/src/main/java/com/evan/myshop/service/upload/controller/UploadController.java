@@ -79,4 +79,14 @@ public class UploadController {
         // 返回文件完整路径
         return url;
     }
+
+    /**
+     * 删除文件
+     * @param fileId 文件id
+     * @return
+     */
+    @RequestMapping(value = "delete", method = RequestMethod.GET)
+    public int delete(String fileId) {
+        return storageService.delete(fileId);
+    }
 }

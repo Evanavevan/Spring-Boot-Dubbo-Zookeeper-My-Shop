@@ -25,7 +25,7 @@ services:
 dubbo:
   ## Base packages to scan Dubbo Component：@com.alibaba.dubbo.config.annotation.Service
   scan:
-    basePackages: com.evan.myshop.service.redis.provider.api.impl
+    basePackages: com.evan.myshop.service.redis.provider.impl
   ## ApplicationConfig Bean
   application:
     id: myshop-service-redis-provider

@@ -1,7 +1,7 @@
 # Spring boot application
 spring:
   application:
-    name: myshop-service-redis-provider
+    name: myshop-service-user-provider
   datasource:
     druid:
       url: jdbc:mysql://120.24.200.204:3306/myshop?useUnicode=true&characterEncoding=utf-8&useSSL=false
@@ -12,11 +12,24 @@ spring:
       max-active: 20
       test-on-borrow: true
       driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        max-wait: -1ms
+        min-idle: 0
+    sentinel:
+      master: mymaster
+      nodes: 120.24.200.204:26379, 120.24.200.204:26380, 120.24.200.204:26381
 server:
   port: 8501
 
 # MyBatis Config properties
 mybatis:
+  # 二级缓存
+  configuration:
+    cache-enabled: true
   type-aliases-package: com.evan.myshop.commons.domain
   mapper-locations: classpath:mapper/*.xml
 
@@ -30,11 +43,11 @@ services:
 dubbo:
   ## Base packages to scan Dubbo Component：@com.alibaba.dubbo.config.annotation.Service
   scan:
-    basePackages: com.evan.myshop.service.redis.provider.api.impl
+    basePackages: com.evan.myshop.service.user.provider.impl
   ## ApplicationConfig Bean
   application:
-    id: myshop-service-redis-provider
-    name: myshop-service-redis-provider
+    id: myshop-service-user-provider
+    name: myshop-service-user-provider
     qos-port: 22222
     qos-enable: true
   ## ProtocolConfig Bean

@@ -1,0 +1,14 @@
+version: '3.1'
+services:
+  myshop-api-gateway:
+    restart: always
+    container_name: myshop-api-gateway
+    image: 127.0.0.1:5000/myshop-api-gateway
+    ports:
+      - 9000:9000
+      - 9001:9001
+    networks:
+    - api-gateway-network
+
+networks:
+  api-gateway-network:

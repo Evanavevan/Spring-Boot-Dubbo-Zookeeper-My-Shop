@@ -5,6 +5,8 @@ import java.io.Serializable;
 
 @Table(name = "tb_order_item")
 public class TbOrderItem implements Serializable {
+    // 二级缓存需要用到的序列号
+    private static final long serialVersionUID = -2101084379901967474L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;

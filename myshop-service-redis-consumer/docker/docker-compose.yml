@@ -1,0 +1,17 @@
+version: '3.1'
+services:
+  myshop-service-redis-consumer:
+    restart: always
+    container_name: myshop-service-redis-consumer
+    image: 127.0.0.1:5000/myshop-service-redis-consumer
+    ports:
+      - 8603:8603
+      - 8703:8703
+      - 30883:30883
+    networks:
+    - service-redis-network
+
+networks:
+  default:
+    external:
+      name: service-redis-network

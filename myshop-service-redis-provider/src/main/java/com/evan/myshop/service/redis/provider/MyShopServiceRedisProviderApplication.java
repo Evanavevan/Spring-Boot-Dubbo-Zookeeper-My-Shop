@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.evan.myshop")
 @EnableHystrix
 @EnableHystrixDashboard
 public class MyShopServiceRedisProviderApplication {

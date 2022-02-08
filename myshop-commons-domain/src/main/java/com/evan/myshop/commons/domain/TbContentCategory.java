@@ -6,6 +6,8 @@ import javax.persistence.*;
 
 @Table(name = "tb_content_category")
 public class TbContentCategory implements Serializable {
+    // 二级缓存需要用到的序列号
+    private static final long serialVersionUID = 8872119298609251818L;
     /**
      * 类目ID
      */
