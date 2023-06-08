@@ -31,7 +31,7 @@
         <cloud-hystrix.version>2.1.3.RELEASE</cloud-hystrix.version>
 
         <!-- Commons Settings -->
-        <kyro.version>0.42</kyro.version>
+        <kyro.version>0.45</kyro.version>
         <mysql.version>8.0.15</mysql.version>
         <lombok.version>1.18.12</lombok.version>
         <guaua.version>2.6.2</guaua.version>
