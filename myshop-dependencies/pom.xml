@@ -25,7 +25,7 @@
         <boot-mapper.version>2.1.5</boot-mapper.version>
         <boot-pagehelper.version>1.3.0</boot-pagehelper.version>
         <boot-druid.version>1.1.10</boot-druid.version>
-        <spring-boot-start.version>2.1.3.RELEASE</spring-boot-start.version>
+        <spring-boot-start.version>3.0.9</spring-boot-start.version>
 
         <!-- Spring Cloud Settings -->
         <cloud-hystrix.version>2.1.3.RELEASE</cloud-hystrix.version>
