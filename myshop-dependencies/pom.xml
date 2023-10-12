@@ -21,7 +21,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <!-- Spring Boot Starter Settings -->
-        <boot-dubbo.version>0.2.0</boot-dubbo.version>
+        <boot-dubbo.version>0.2.1</boot-dubbo.version>
         <boot-mapper.version>2.1.5</boot-mapper.version>
         <boot-pagehelper.version>1.3.0</boot-pagehelper.version>
         <boot-druid.version>1.1.10</boot-druid.version>
